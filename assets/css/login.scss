@@ -1,0 +1,54 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../images/login_bg.jpg) no-repeat center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    img {
+        margin: 10px;
+    }
+    .login {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin: 10% auto;
+        width: 400px;
+        height: 320px;
+        background-color: #fff;
+        box-shadow: -1px 2px 2px white;
+        .input-group {
+            position: relative;
+            width: 300px;
+            margin: 0 auto;
+            img {
+                margin: 20px;
+                margin-left: 50%;
+                transform: translate(-50%);
+            }
+            .form-control {
+                padding-left: 32px;
+            }
+            a {
+                display: block;
+                float: right;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    #createAccount {
+        display: none;
+    }
+}
+
+.layui-form-item {
+    position: relative;
+    .layui-icon {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 4;
+    }
+}
+
