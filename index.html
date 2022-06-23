@@ -16,25 +16,26 @@
         <div class="layui-header">
             <img src="./assets/images/logo.png" alt="">
             <ul class="layui-nav layui-layout-right ">
-                <li class="layui-nav-item layui-hide layui-show-md-inline-block">
+                <li class="layui-nav-item layui-hide layui-show-md-inline-block" id="head-nav">
                     <a href="javascript:;" class="userinfo">
                         <div class="font-header">A</div>
                         <img src="" class="layui-nav-img" id="userImg1">
                         <span class="Username">骄傲的牛尾巴</span>
                     </a>
-                    <dl class="layui-nav-child" >
-                        <dd><a href="javascript:;">个人中心</a></dd>
-                        <dd><a href="javascript:;">账户设置</a></dd>
-                        <dd><a href="javascript:;" id="logout">退出登录</a></dd>
+                    <dl class="layui-nav-child">
+                        <dd><a href="./home/userImformation.html" target="fm" ><span id="modifyUserInfo">个人资料修改</span></a></dd>
+                        <dd><a href="./home/user_avatar.html" target="fm">更换头像</a></dd>
+                        <dd><a href="./home/modifyPsw.html" target="fm" class="modifyPsw">修改密码</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
-                    <a href="javascript:;">退出登录
+                    <a href="javascript:;" class="logout"><span >退出登录</span> 
                         <i class="layui-icon layui-icon-logout"></i>
                     </a>
                 </li>
             </ul>
         </div>
+        
 
         <div class="layui-side layui-bg-black">
             <div class="layui-side-scroll">
@@ -43,7 +44,7 @@
                     <div href="javascript:;" class="userinfo">
                         <div class="font-header">A</div>
                         <img src="" class="layui-nav-img" id="userImg2">
-                        <span class="Username">骄傲的牛尾巴</span>
+                        <span class="Username"></span>
                     </div>
                 </li>
                 <ul class="layui-nav layui-nav-tree layui-bg-black" lay-shrink="all">
@@ -60,11 +61,11 @@
                     </li>
                     <li class="layui-nav-item">
                         <a href="javascript:;" class="userCenter"><span
-                                class="iconfont layui-icon layui-icon-user"></span>个人中心</a>
+                                class="iconfont layui-icon layui-icon-user"></span>个人信息</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;" id="modifyUserInfo" href="" target="fm">修改个人资料</a></dd>
-                            <dd><a href="javascript:;">list 2</a></dd>
-                            <dd><a href="javascript:;">超链接</a></dd>
+                            <dd><a href="./home/userImformation.html" target="fm" ><span id="modifyUserInfo">修改个人资料</span></a></dd>
+                            <dd><a href="./home/user_avatar.html" target="fm">更换头像</a></dd>
+                            <dd><a href="./home/modifyPsw.html" target="fm" class="modifyPsw">修改密码</a></dd>
                         </dl>
                     </li>
                 </ul>
